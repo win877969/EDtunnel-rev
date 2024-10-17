@@ -25,271 +25,268 @@ function homePageHTML() {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEDEBAH - VLESS Proxy</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            background: linear-gradient(135deg, #1d1f21 0%, #34495e 100%);
-            color: #ecf0f1;
-            overflow-x: hidden;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>VPN Vless | Embeng 🇮🇩🇵🇸</title>
+  <link rel="icon" href=
+  "https://www.svgrepo.com/download/375724/vpn-alt.svg" type=
+  "image/svg+xml">
+  <link href=
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href=
+  "https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
-        .sidebar {
-            width: 300px;
-            background: rgba(44, 62, 80, 0.9);
-            color: #ecf0f1;
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 1;
-        }
-
-        .sidebar h2 {
-            font-size: 24px;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .sidebar a {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #ecf0f1;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-
-        .sidebar a i {
-            margin-right: 15px;
-            font-size: 24px;
-            transition: transform 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #1abc9c;
-        }
-
-        .sidebar a:hover i {
-            transform: rotate(360deg);
-        }
-
-        .main-content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            background: linear-gradient(to center, #2c3e50, #34495e);
-            position: relative;
-        }
-
-        .main-content:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
-            pointer-events: none;
-            animation: pulse 5s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(0.9);
+  <script src=
+  "https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+            .form-control::placeholder {
+                color: #999;
+                font-style: italic;
             }
-            50% {
-                transform: scale(1.1);
+            table.dataTable {
+                background-color: #343a40;
+                border: 1px solid #6c757d;
+                color: white;
+                border-collapse: collapse;
             }
-            100% {
-                transform: scale(0.9);
+            .table-dark tr,
+            .table-dark td {
+                color: white;
+                vertical-align: middle;
             }
-        }
-
-        h1 {
-            font-size: 42px;
-            color: #ecf0f1;
-            text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-            margin-bottom: 30px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .content {
-            max-width: 800px;
-            width: 100%;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 2;
-        }
-
-        .content h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-            color: #1abc9c;
-        }
-
-        .content p {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        input[type="text"] {
-            padding: 15px;
-            font-size: 16px;
-            width: 100%;
-            max-width: 450px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #fff;
-            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        input[type="text"]:focus {
-            outline: none;
-            border-color: #1abc9c;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #1abc9c;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(26, 188, 156, 0.5);
-            transition: all 0.3s ease, transform 0.2s ease;
-            position: relative;
-            z-index: 2;
-        }
-
-        button:active {
-            transform: translateY(3px);
-            box-shadow: 0 3px 10px rgba(26, 188, 156, 0.3);
-        }
-
-        button:hover {
-            background-color: #16a085;
-        }
-
-        button:hover::after {
-            content: '';
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            right: -15px;
-            bottom: -15px;
-            border-radius: 20px;
-            border: 2px solid rgba(26, 188, 156, 0.6);
-            opacity: 0;
-            animation: hover-effect 0.4s forwards;
-        }
-
-        @keyframes hover-effect {
-            0% {
-                opacity: 0;
-                transform: scale(0.8);
+            table.dataTable thead {
+                background-color: #495057;
+                color: white;
             }
-            100% {
-                opacity: 1;
-                transform: scale(1.2);
+            table.dataTable thead th {
+                text-align: center;
+                border: 1px solid #6c757d;
             }
-        }
-
-        .special-thanks {
-            margin-top: 50px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .special-thanks p {
-            margin-bottom: 15px;
-        }
-
-        .special-thanks a {
-            color: #1abc9c;
-            text-decoration: none;
-            font-weight: bold;
-            position: relative;
-            z-index: 2;
-            transition: color 0.3s ease;
-        }
-
-        .special-thanks a:hover {
-            color: #16a085;
-            text-shadow: 0 5px 15px rgba(26, 188, 156, 0.5);
-        }
-
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                padding: 15px 20px;
-                box-shadow: none;
+            table.dataTable tbody td {
+                text-align: center;
+                border: 1px solid #50575e;
             }
-
-            .main-content {
-                padding: 30px 20px;
+            table.dataTable tbody tr {
+                border: 1px solid #50575e;
             }
-
-            h1 {
-                font-size: 32px;
+            table.dataTable tbody tr:hover {
+                background-color: #50575e;
             }
-
-            .content {
-                padding: 20px;
+            .dataTables_wrapper .dataTables_filter label,
+            .dataTables_wrapper .dataTables_length label,
+            .dataTables_wrapper .dataTables_info,
+            .dataTables_wrapper .dataTables_paginate {
+                color: white;
             }
-
-            .content h2 {
-                font-size: 24px;
+            .dataTables_wrapper .dataTables_filter input,
+            .dataTables_wrapper .dataTables_length select {
+                color: white;
             }
-
-            input[type="text"] {
-                font-size: 14px;
-                padding: 12px;
+            .dataTables_wrapper .dataTables_paginate .paginate_button {
+                color: white;
             }
-
-            button {
-                padding: 12px 25px;
-                font-size: 16px;
+            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+                background-color: #50575e;
+                color: white;
             }
-        }
-    </style>
+            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+                background-color: #50575e;
+                color: white;
+                border: 1px solid #6c757d;
+            }
+            .dataTables_wrapper .dataTables_info,
+            .dataTables_wrapper .dataTables_paginate {
+                color: white;
+                text-align: center;
+            }
+  </style>
 </head>
-<body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div>
-            <h2>Navigation</h2><a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02" target="_blank"> CF-PREM</a>
-            <a href="https://t.me/edtunrev" target="_blank"><i class="fab fa-telegram"></i> Telegram Group</a>
-        </div>
+<body class="bg-dark text-white">
+  <div class="container mt-4">
+    <div class="text-center mt-4">
+      <h1 class="text-center">Free VPN Vless</h1>
     </div>
+    <div class="card bg-secondary text-white">
+      <div class="card-body">
+        <h3 class="text-center">Add Proxy</h3>
+        <form method="post" action="#">
+          <div class="mb-3">
+            <label for="proxy" class="form-label">Proxy
+            <small class="text-warning" style=
+            "font-style: italic;">(Max 10 lines)</small></label> 
+            <textarea rows="5" cols="10" class="form-control" id=
+            "proxy" name="proxy" placeholder=
+            "wildcard : ava.game.naver.com, quiz.vidio.com, graph.instagram.com, investors.spotify.com, io.ruangguru.com, zaintest.vuclip.com, support.zoom.us, cache.netflix.com dll..">
+            </textarea>
+            <div class=
+            "alert alert-danger alert-dismissible fade show mt-2"
+            id="lineWarning" style="display: none;">
+              You can only enter a maximum of 10 lines.
+            </div>
+          </div><button type="submit" class=
+          "btn btn-primary w-100"> Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="card bg-secondary text-white mt-4">
+      <div class="card-body">
+        <h3 class="text-center">Proxy Database</h3>
+        <div class="table-responsive">
+          <table id="proxyTable" class=
+          "table table-bordered table-striped text-white bg-dark table-dark mt-3">
+            <thead>
+              <tr>
+                <th>Proxy</th>
+                <th>Country</th>
+                <th>ISP</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>101.50.0.114:8443</td>
+                <td>Indonesia</td>
+                <td>Pt. Beon Intermedia</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D101.50.0.114%3A8443#Pt.+Beon+Intermedia")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D101.50.0.114%3A8443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Pt.+Beon+Intermedia")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>172.232.252.101:587</td>
+                <td>Indonesia</td>
+                <td>Akamai Technologies, Inc.</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D172.232.252.101%3A587#Akamai+Technologies,+Inc.")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D172.232.252.101%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Akamai+Technologies,+Inc.")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>35.219.50.99:587</td>
+                <td>Indonesia</td>
+                <td>Google LLC</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D8.215.23.33%3A587#Google+LLC")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D8.215.23.33%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Google+LLC")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>129.150.50.63:443</td>
+                <td>Singapore</td>
+                <td>Oracle Corporation</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D129.150.50.63%3A443#Oracle+Corporation")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D129.150.50.63%3A443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Oracle+Corporation")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>103.133.223.52:2096</td>
+                <td>Indonesia</td>
+                <td>Pt Cloud Teknologi Nusantara</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D103.133.223.52%3A2096#Pt+Cloud+Teknologi+Nusantara")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D103.133.223.52%3A2096&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Pt+Cloud+Teknologi+Nusantara")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>165.154.48.233:587</td>
+                <td>Indonesia</td>
+                <td>UCLOUD INFORMATION TECHNOLOGY HK LIMITED</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D165.154.48.233%3A587#UCLOUD+INFORMATION+TECHNOLOGY+HK+LIMITED")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D165.154.48.233%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#UCLOUD+INFORMATION+TECHNOLOGY+HK+LIMITED")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>35.219.15.90:443</td>
+                <td>Indonesia</td>
+                <td>Google LLC</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D35.219.15.90%3A443#Google+LLC")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D35.219.15.90%3A443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Google+LLC")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>43.218.79.114:2053</td>
+                <td>Indonesia</td>
+                <td>Amazon.com, Inc.</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D43.218.79.114%3A2053#Amazon.com,+Inc.")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D43.218.79.114%3A2053&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Amazon.com,+Inc.")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>203.194.112.119:2053</td>
+                <td>Indonesia</td>
+                <td>Rumahweb</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D203.194.112.119%3A2053#Rumahweb")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D203.194.112.119%3A2053&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Rumahweb")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>47.236.7.98:587</td>
+                <td>Singapore</td>
+                <td>Alibaba us Technology Co., Ltd.</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D47.236.7.98%3A587#Alibaba+us+Technology+Co.,+Ltd.")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D47.236.7.98%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Alibaba+us+Technology+Co.,+Ltd.")'>
+                Copy NTLS</button></td>
+              </tr>
+              <tr>
+                <td>157.230.33.184:80</td>
+                <td>Singapore</td>
+                <td>Digitalocean, LLC</td>
+                <td><button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D157.230.33.184%3A80#Digitalocean,+LLC")'>
+                Copy TLS</button> <button class="button2" onclick=
+                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D157.230.33.184%3A80&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Digitalocean,+LLC")'>
+                Copy NTLS</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark text-white text-center mt-4">
+      <p>© 2024 Free Vless | by~ Embeng.</p>
+    </footer>
+  </div>
+  <script src=
+  "https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src=
+  "https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  
+  <script>
 
+            $(document).ready(function() {
+                $('#proxyTable').DataTable();
+            });
+
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        alert("Copied to clipboard");
+                    })
+                    .catch((err) => {
+                        console.error("Failed to copy to clipboard:", err);
+                    });
+            }
+  </script>
 </body>
 </html>
 
