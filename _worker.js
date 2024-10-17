@@ -1450,4 +1450,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'cf-prem.bmkg.xyz',               
+	'cf-prem.bmkg.xyz',   
+	];
