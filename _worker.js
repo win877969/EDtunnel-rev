@@ -93,7 +93,7 @@ function homePageHTML() {
             justify-content: space-between;
             align-items: center;
             padding: 50px;
-            background: linear-gradient(to right, #2c3e50, #34495e);
+            background: linear-gradient(to center, #2c3e50, #34495e);
             position: relative;
         }
 
