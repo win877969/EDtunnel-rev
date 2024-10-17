@@ -34,7 +34,7 @@ Origional version was written by **3Kmfi6HP**.
 
 2. Alternatively, you can click the button below to deploy directly.
 
-   [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/EDtunnel-rev/EDtunnel-rev)
+   [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/win877969/cf-ws)
 
 ## Lazy to deploy
 
