@@ -297,11 +297,7 @@ function homePageHTML() {
         <div class="content">
             <h2>Welcome to BEDEBAH</h2>
             <p>PAGE DALAM PENGEMBANGAN.</p>
-            <input type="text" id="uuidInput" placeholder="Enter your UUID here">
-            <button onclick="redirectToUUID()">Generate Configuration</button>
-
-
-
+           
             <div class="special-thanks">
                 <h2>Special Thanks</h2>
                 <p>1. Contributors pengembang (See them at <a href="https://github.com/win877969/cf-ws/pulls" target="_blank">pull requests</a> and <a href="https://github.com/win877969/cf-ws/graphs/contributors" target="_blank">contributors</a>)</p>
