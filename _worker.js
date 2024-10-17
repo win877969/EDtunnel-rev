@@ -28,7 +28,7 @@ function homePageHTML() {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEDEBAH-rev - VLESS Proxy</title>
+    <title>BEDEBAH - VLESS Proxy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -296,9 +296,9 @@ function homePageHTML() {
 
     <!-- Main Content -->
     <div class="main-content">
-        <h1>BEDEBAH-rev - The Best VLESS Proxy Based on Cloudflare Pages</h1>
+        <h1>BEDEBAH - The Best VLESS Proxy Based on Cloudflare Pages</h1>
         <div class="content">
-            <h2>Welcome to BEDEBAH-rev!</h2>
+            <h2>Welcome to BEDEBAH!</h2>
             <p>This tool provides a robust and efficient way to use the VLESS proxy protocol using Cloudflare Pages. Enter your UUID below to generate a custom VLESS configuration page.</p>
             <input type="text" id="uuidInput" placeholder="Enter your UUID here">
             <button onclick="redirectToUUID()">Generate Configuration</button>
@@ -1056,8 +1056,8 @@ ${วเลสSec}
 	const header = `
 <b style='font-size: 15px;'>Welcome! This function generates configuration for vless protocol. If you found this useful, please check our GitHub project for more:</b>
 <b style='font-size: 15px;'>BEDEBAH TUNNEL</b>
-<a href='https://github.com/win877969/cf-ws' target='_blank'>BEDEBAH-rev - https://github.com/win877969/cf-ws</a>
-<iframe src='https://ghbtns.com/github-btn.html?user=BEDEBAH-rev&repo=BEDEBAH-rev&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
+<a href='https://github.com/win877969/cf-ws' target='_blank'>BEDEBAH - https://github.com/win877969/cf-ws</a>
+
 <a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>vless sub</a>
 <a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows Sub</a>
 <a href='${clash_link}' target='_blank'>Clash Sub</a>
@@ -1076,7 +1076,7 @@ ${วเลสSec}
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta property='og:site_name' content='BEDEBAH: VLESS Configuration' />
 	<meta property='og:type' content='website' />
-	<meta property='og:title' content='BEDEBAH-rev - VLESS Configuration and Subscribe Output' />
+	<meta property='og:title' content='BEDEBAH - VLESS Configuration and Subscribe Output' />
 	<meta property='og:description' content='Use Cloudflare Pages and Worker Severless to implement VLESS protocol' />
 	<meta property='og:url' content='https://${hostName}/' />
 	<meta property='og:image' content='https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`วเลส://${userIDs.split(",")[0]}@${hostName}${commonUrlPart}`)}' />
@@ -1372,10 +1372,10 @@ ${วเลสSec}
 			<ol>
 				<li><strong>Compliance with Laws:</strong> You agree to use this tool in full compliance with all local, national, and international laws and regulations.</li>
 				<li><strong>No Misuse:</strong> You agree not to misuse this tool for any illegal, unethical, or immoral activities. This includes, but is not limited to, using it to transmit or facilitate the transmission of unwholesome, harmful, or offensive content.</li>
-				<li><strong>Responsibility Disclaimer:</strong> All actions taken using this tool are your own responsibility. The creators and contributors of this project, including the GitHub account <a href="https://github.com/BEDEBAH-rev" target="_blank">BEDEBAH-rev</a>, are not aware of or responsible for how you choose to use this tool.</li>
+				<li><strong>Responsibility Disclaimer:</strong> All actions taken using this tool are your own responsibility. The creators and contributors of this project, including the GitHub account <a href="https://github.com/BEDEBAH" target="_blank">BEDEBAH</a>, are not aware of or responsible for how you choose to use this tool.</li>
 				<li><strong>No Liability:</strong> The creators and contributors of this project are not liable for any consequences resulting from your use of this tool, including but not limited to legal, financial, or reputational damages.</li>
 				<li><strong>Non-affiliation:</strong> This tool is provided independently and is not affiliated with or endorsed by any organization, government, or corporate entity.</li>
-				<li><strong>Open Source Contributions:</strong> This project is contributed by the GitHub account <a href="https://github.com/BEDEBAH-rev" target="_blank">BEDEBAH-rev</a>. The actual controller of this account is Satdog, whose official website is <a href="https://cf-ws.bmkg.xyz" target="_blank">https://cf-ws.bmkg.xyz</a>. Satdog's GitHub official account is <a href="https://github.com/EXEthereum" target="_blank">EXEthereum</a>, with the official page at <a href="https://github.com/EXEthereum" target="_blank">https://github.com/EXEthereum</a>.</li>
+				<li><strong>Open Source Contributions:</strong> This project is contributed by the GitHub account <a href="https://github.com/win877969" target="_blank">BEDEBAH</a>. The actual controller of this account is Satdog, whose official website is <a href="https://cf-ws.bmkg.xyz" target="_blank">https://cf-ws.bmkg.xyz</a>. Satdog's GitHub official account is <a href="https://github.com/win877969" target="_blank">GITHUB</a>, with the official page at <a href="https://t.me/seaker877" target="_blank">TELEGRAM</a>.</li>
 				<li><strong>Independence of the Author:</strong> The author of this project is not aware of and is not responsible for how this tool is used. The author does not endorse or condone any particular use case for this tool.</li>
 				<li><strong>Amendments:</strong> The terms of this agreement may be updated or changed at any time, and it is your responsibility to stay informed of such changes by reviewing the agreement periodically.</li>
 			</ol>
@@ -1450,5 +1450,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'cf-prem.bmkg.xyz',   
+	'cf-prem.bmkg.xyz',              
 	];
