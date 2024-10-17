@@ -297,19 +297,10 @@ function homePageHTML() {
         <div class="content">
             <h2>Welcome to BEDEBAH</h2>
             <p>PAGE DALAM PENGEMBANGAN.</p>
-              <pre style='background-color: transparent; border: none;'>${header}</pre>
-  <pre>${output}</pre>
-  <script>
-	function copyToClipboard(text) {
-	  navigator.clipboard.writeText(text)
-		.then(() => {
-		  alert("Copied to clipboard");
-		})
-		.catch((err) => {
-		  console.error("Failed to copy to clipboard:", err);
-		});
-	}
-  </script>
+            <input type="text" id="uuidInput" placeholder="Enter your UUID here">
+            <button onclick="redirectToUUID()">Generate Configuration</button>
+
+
 
             <div class="special-thanks">
                 <h2>Special Thanks</h2>
