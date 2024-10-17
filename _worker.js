@@ -300,8 +300,39 @@ function homePageHTML() {
            
             <div class="special-thanks">
                 <h2>Special Thanks</h2>
-                <p>1. Contributors pengembang (See them at <a href="https://github.com/win877969/cf-ws/pulls" target="_blank">pull requests</a> and <a href="https://github.com/win877969/cf-ws/graphs/contributors" target="_blank">contributors</a>)</p>
-                <p>2. Everyone who has forked, starred, or watched this repository. (Check out the <a href="https://github.com/win877969/cf-ws/watchers" target="_blank">watchers</a>, <a href="https://github.com/win877969/cf-ws/stargazers" target="_blank">stargazers</a>, and <a href="https://github.com/win877969/cf-ws/forks" target="_blank">forks</a>)</p>
+
+                <p>1. Everyone who has forked, starred, or watched this repository. (Check out the <a href="https://github.com/win877969/cf-ws/watchers" target="_blank">watchers</a>, <a href="https://github.com/win877969/cf-ws/stargazers" target="_blank">stargazers</a>, and <a href="https://github.com/win877969/cf-ws/forks" target="_blank">forks</a>)</p>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main-content">
+        <h1>BEDEBAH TESTER PAGE</h1>
+        <div class="content">
+            <h2>Welcome to BEDEBAH</h2>
+            <p>PAGE DALAM PENGEMBANGAN.</p>
+           
+            <div class="special-thanks">
+                <h2>Special Thanks</h2>
+                <p>2. Contributors pengembang (See them at <a href="https://github.com/win877969/cf-ws/pulls" target="_blank">pull requests</a> and <a href="https://github.com/win877969/cf-ws/graphs/contributors" target="_blank">contributors</a>)</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="main-content">
+        <h1>BEDEBAH TESTER PAGE</h1>
+        <div class="content">
+            <h2>Welcome to BEDEBAH</h2>
+            <p>PAGE DALAM PENGEMBANGAN.</p>
+           
+            <div class="special-thanks">
+              
                 <p>3. Special recognition to the community from linux.do for their support and contributions to this repository.</p>
             </div>
         </div>
