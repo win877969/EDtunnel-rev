@@ -286,55 +286,8 @@ function homePageHTML() {
     <div class="sidebar">
         <div>
             <h2>Navigation</h2>
-            <a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02'' target="_blank"><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
+            <a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02''><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
             <a href="https://t.me/edtunrev" target="_blank"><i class="fab fa-telegram"></i> Telegram Group</a>
-        </div>
-    </div>
-<p></p>
-    <!-- Main Content -->
-    <div class="main-content">
-        <h1>BEDEBAH TESTER PAGE</h1>
-        <div class="content">
-            <h2>Welcome to BEDEBAH</h2>
-            <p>PAGE DALAM PENGEMBANGAN.</p>
-           
-            <div class="special-thanks">
-                <h2>Special Thanks</h2>
-
-                <p>1. Everyone who has forked, starred, or watched this repository. (Check out the <a href="https://github.com/win877969/cf-ws/watchers" target="_blank">watchers</a>, <a href="https://github.com/win877969/cf-ws/stargazers" target="_blank">stargazers</a>, and <a href="https://github.com/win877969/cf-ws/forks" target="_blank">forks</a>)</p>
-                
-            </div>
-        </div>
-    </div>
-<p></p>
-
-
-    <div class="main-content">
-        <h1>BEDEBAH TESTER PAGE</h1>
-        <div class="content">
-            <h2>Welcome to BEDEBAH</h2>
-            <p>PAGE DALAM PENGEMBANGAN.</p>
-           
-            <div class="special-thanks">
-                <h2>Special Thanks</h2>
-                <p>2. Contributors pengembang (See them at <a href="https://github.com/win877969/cf-ws/pulls" target="_blank">pull requests</a> and <a href="https://github.com/win877969/cf-ws/graphs/contributors" target="_blank">contributors</a>)</p>
-            </div>
-        </div>
-    </div>
-
-<p></p>
-
-
-    <div class="main-content">
-        <h1>BEDEBAH TESTER PAGE</h1>
-        <div class="content">
-            <h2>Welcome to BEDEBAH</h2>
-            <p>PAGE DALAM PENGEMBANGAN.</p>
-           
-            <div class="special-thanks">
-              
-                <p>3. Special recognition to the community from linux.do for their support and contributions to this repository.</p>
-            </div>
         </div>
     </div>
 
