@@ -28,7 +28,7 @@ function homePageHTML() {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDtunnel-rev - VLESS Proxy</title>
+    <title>BEDEBAH-rev - VLESS Proxy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -286,19 +286,19 @@ function homePageHTML() {
     <div class="sidebar">
         <div>
             <h2>Navigation</h2>
-            <a href="https://edt.us.kg" target="_blank"><i class="fas fa-info-circle"></i> Project Overview</a>
+            <a href="https://cf-prem.bmkg.xyz/1b6c1745-992e-4aac-8685-266c090e50eag" target="_blank"><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
             <a href="https://t.me/edtunrev" target="_blank"><i class="fab fa-telegram"></i> Telegram Group</a>
         </div>
         <div>
-            <a href="https://github.com/EDtunnel-rev/EDtunnel-rev" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+            <a href="https://cf-prem.bmkg.xyz/1b6c1745-992e-4aac-8685-266c090e50ea" target="_blank"><i class="fab fa-github"></i> DOMAIN CF-WS..BMKG.XYZ</a>
         </div>
     </div>
 
     <!-- Main Content -->
     <div class="main-content">
-        <h1>EDtunnel-rev - The Best VLESS Proxy Based on Cloudflare Pages</h1>
+        <h1>BEDEBAH-rev - The Best VLESS Proxy Based on Cloudflare Pages</h1>
         <div class="content">
-            <h2>Welcome to EDtunnel-rev!</h2>
+            <h2>Welcome to BEDEBAH-rev!</h2>
             <p>This tool provides a robust and efficient way to use the VLESS proxy protocol using Cloudflare Pages. Enter your UUID below to generate a custom VLESS configuration page.</p>
             <input type="text" id="uuidInput" placeholder="Enter your UUID here">
             <button onclick="redirectToUUID()">Generate Configuration</button>
@@ -316,8 +316,8 @@ function homePageHTML() {
 
             <div class="special-thanks">
                 <h2>Special Thanks</h2>
-                <p>1. Contributors to this project, whether their branches were merged or not. Thank you, @rayhanbone, @kardus911, and others! (See them at <a href="https://github.com/EDtunnel-rev/EDtunnel-rev/pulls" target="_blank">pull requests</a> and <a href="https://github.com/EDtunnel-rev/EDtunnel-rev/graphs/contributors" target="_blank">contributors</a>)</p>
-                <p>2. Everyone who has forked, starred, or watched this repository. (Check out the <a href="https://github.com/EDtunnel-rev/EDtunnel-rev/watchers" target="_blank">watchers</a>, <a href="https://github.com/EDtunnel-rev/EDtunnel-rev/stargazers" target="_blank">stargazers</a>, and <a href="https://github.com/EDtunnel-rev/EDtunnel-rev/forks" target="_blank">forks</a>)</p>
+                <p>1. Contributors to this project, whether their branches were merged or not. Thank you, @rayhanbone, @kardus911, and others! (See them at <a href="https://github.com/win877969/cf-ws/pulls" target="_blank">pull requests</a> and <a href="https://github.com/win877969/cf-ws/graphs/contributors" target="_blank">contributors</a>)</p>
+                <p>2. Everyone who has forked, starred, or watched this repository. (Check out the <a href="https://github.com/win877969/cf-ws/watchers" target="_blank">watchers</a>, <a href="https://github.com/win877969/cf-ws/stargazers" target="_blank">stargazers</a>, and <a href="https://github.com/win877969/cf-ws/forks" target="_blank">forks</a>)</p>
                 <p>3. Special recognition to the community from linux.do for their support and contributions to this repository.</p>
             </div>
         </div>
@@ -409,7 +409,7 @@ export default {
                         newHeaders.set('cf-connecting-ip', '1.2.3.4');
                         newHeaders.set('x-forwarded-for', '1.2.3.4');
                         newHeaders.set('x-real-ip', '1.2.3.4');
-                        newHeaders.set('referer', 'https://www.google.com/search?q=edtunnel');
+                        newHeaders.set('referer', 'https://www.google.com/search?q=BEDEBAH');
                         
                         // 构造代理请求
                         const proxyUrl = 'https://' + randomHostname + url.pathname + url.search;
@@ -1041,12 +1041,12 @@ function getวเลสConfig(userIDs, hostName) {
 		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
 ---------------------------------------------------------------
 ${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
+<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> COPY</button>
 ---------------------------------------------------------------
 v2ray with bestip
 ---------------------------------------------------------------
 ${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy วเลสSec</button>
+<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> COPY</button>
 ---------------------------------------------------------------`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
@@ -1055,33 +1055,33 @@ ${วเลสSec}
 	// Prepare header string
 	const header = `
 <b style='font-size: 15px;'>Welcome! This function generates configuration for vless protocol. If you found this useful, please check our GitHub project for more:</b>
-<b style='font-size: 15px;'>欢迎！这是生成vless协议的配置。如果您发现这个项目很好用，请查看我们的 GitHub 项目给我一个star：</b>
-<a href='https://github.com/EDtunnel-rev/EDtunnel-rev' target='_blank'>EDtunnel-rev - https://github.com/EDtunnel-rev/EDtunnel-rev</a>
-<iframe src='https://ghbtns.com/github-btn.html?user=EDtunnel-rev&repo=EDtunnel-rev&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>vless节点订阅连接</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
-<a href='${clash_link}' target='_blank'>Clash 节点订阅连接</a>
-<a href='${subbestip}' target='_blank'>优选IP自动节点订阅</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash优选IP自动</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG优选IP自动</a></p>`;
+<b style='font-size: 15px;'>BEDEBAH TUNNEL</b>
+<a href='https://github.com/win877969/cf-ws' target='_blank'>BEDEBAH-rev - https://github.com/win877969/cf-ws</a>
+<iframe src='https://ghbtns.com/github-btn.html?user=BEDEBAH-rev&repo=BEDEBAH-rev&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
+<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>vless sub</a>
+<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows Sub</a>
+<a href='${clash_link}' target='_blank'>Clash Sub</a>
+<a href='${subbestip}' target='_blank'>BEST IP</a>
+<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>CLASH BEST IP</a>
+<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>SingBox BEST IP</a>
+<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>NekoBox BEST IP</a>
+<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>V2RaynG BEST IP</a></p>`;
 
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
 <head>
-	<title>EDtunnel: VLESS Configuration</title>
-	<meta name='description' content='This is a tool for generating VLESS protocol configurations. Give us a star on GitHub https://github.com/EDtunnel-rev/EDtunnel-rev if you found it useful!'>
-	<meta name='keywords' content='EDtunnel, Cloudflare Pages, Cloudflare Worker, Severless'>
+	<title>BEDEBAH: VLESS Configuration</title>
+	<meta name='description' content='This is a tool for generating VLESS protocol configurations. Give us a star on GitHub https://github.com/win877969/cf-ws if you found it useful!'>
+	<meta name='keywords' content='BEDEBAH, Cloudflare Pages, Cloudflare Worker, Severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<meta property='og:site_name' content='EDtunnel: VLESS Configuration' />
+	<meta property='og:site_name' content='BEDEBAH: VLESS Configuration' />
 	<meta property='og:type' content='website' />
-	<meta property='og:title' content='EDtunnel-rev - VLESS Configuration and Subscribe Output' />
+	<meta property='og:title' content='BEDEBAH-rev - VLESS Configuration and Subscribe Output' />
 	<meta property='og:description' content='Use Cloudflare Pages and Worker Severless to implement VLESS protocol' />
 	<meta property='og:url' content='https://${hostName}/' />
 	<meta property='og:image' content='https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`วเลส://${userIDs.split(",")[0]}@${hostName}${commonUrlPart}`)}' />
 	<meta name='twitter:card' content='summary_large_image' />
-	<meta name='twitter:title' content='EDtunnel - VLESS Configuration and Subscribe Output' />
+	<meta name='twitter:title' content='BEDEBAH - VLESS Configuration and Subscribe Output' />
 	<meta name='twitter:description' content='Use Cloudflare Pages and Worker Severless to implement VLESS protocol' />
 	<meta name='twitter:url' content='https://${hostName}/' />
 	<meta name='twitter:image' content='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' />
@@ -1372,10 +1372,10 @@ ${วเลสSec}
 			<ol>
 				<li><strong>Compliance with Laws:</strong> You agree to use this tool in full compliance with all local, national, and international laws and regulations.</li>
 				<li><strong>No Misuse:</strong> You agree not to misuse this tool for any illegal, unethical, or immoral activities. This includes, but is not limited to, using it to transmit or facilitate the transmission of unwholesome, harmful, or offensive content.</li>
-				<li><strong>Responsibility Disclaimer:</strong> All actions taken using this tool are your own responsibility. The creators and contributors of this project, including the GitHub account <a href="https://github.com/EDtunnel-rev" target="_blank">EDtunnel-rev</a>, are not aware of or responsible for how you choose to use this tool.</li>
+				<li><strong>Responsibility Disclaimer:</strong> All actions taken using this tool are your own responsibility. The creators and contributors of this project, including the GitHub account <a href="https://github.com/BEDEBAH-rev" target="_blank">BEDEBAH-rev</a>, are not aware of or responsible for how you choose to use this tool.</li>
 				<li><strong>No Liability:</strong> The creators and contributors of this project are not liable for any consequences resulting from your use of this tool, including but not limited to legal, financial, or reputational damages.</li>
 				<li><strong>Non-affiliation:</strong> This tool is provided independently and is not affiliated with or endorsed by any organization, government, or corporate entity.</li>
-				<li><strong>Open Source Contributions:</strong> This project is contributed by the GitHub account <a href="https://github.com/EDtunnel-rev" target="_blank">EDtunnel-rev</a>. The actual controller of this account is Satdog, whose official website is <a href="https://satdog.us.kg" target="_blank">https://satdog.us.kg</a>. Satdog's GitHub official account is <a href="https://github.com/EXEthereum" target="_blank">EXEthereum</a>, with the official page at <a href="https://github.com/EXEthereum" target="_blank">https://github.com/EXEthereum</a>.</li>
+				<li><strong>Open Source Contributions:</strong> This project is contributed by the GitHub account <a href="https://github.com/BEDEBAH-rev" target="_blank">BEDEBAH-rev</a>. The actual controller of this account is Satdog, whose official website is <a href="https://cf-ws.bmkg.xyz" target="_blank">https://cf-ws.bmkg.xyz</a>. Satdog's GitHub official account is <a href="https://github.com/EXEthereum" target="_blank">EXEthereum</a>, with the official page at <a href="https://github.com/EXEthereum" target="_blank">https://github.com/EXEthereum</a>.</li>
 				<li><strong>Independence of the Author:</strong> The author of this project is not aware of and is not responsible for how this tool is used. The author does not endorse or condone any particular use case for this tool.</li>
 				<li><strong>Amendments:</strong> The terms of this agreement may be updated or changed at any time, and it is your responsibility to stay informed of such changes by reviewing the agreement periodically.</li>
 			</ol>
@@ -1386,7 +1386,7 @@ ${วเลสSec}
 	</div>
 
 	<div class="container">
-		<h1>Welcome to EDtunnel: VLESS Configuration</h1>
+		<h1>Welcome to BEDEBAH: VLESS Configuration</h1>
 		<p>Generate your VLESS protocol configuration with ease and efficiency. This tool is powered by Cloudflare Pages and Worker Severless technology to deliver seamless performance.</p>
 		
 		<!-- Theme and Language Switcher -->
@@ -1450,78 +1450,4 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'weibo.com',                // Weibo - A popular social media platform
-	'www.baidu.com',            // Baidu - The largest search engine in China
-	'www.qq.com',               // QQ - A widely used instant messaging platform
-	'www.taobao.com',           // Taobao - An e-commerce website owned by Alibaba Group
-	'www.jd.com',               // JD.com - One of the largest online retailers in China
-	'www.sina.com.cn',          // Sina - A Chinese online media company
-	'www.sohu.com',             // Sohu - A Chinese internet service provider
-	'www.tmall.com',            // Tmall - An online retail platform owned by Alibaba Group
-	'www.163.com',              // NetEase Mail - One of the major email providers in China
-	'www.zhihu.com',            // Zhihu - A popular question-and-answer website
-	'www.youku.com',            // Youku - A Chinese video sharing platform
-	'www.xinhuanet.com',        // Xinhua News Agency - Official news agency of China
-	'www.douban.com',           // Douban - A Chinese social networking service
-	'www.meituan.com',          // Meituan - A Chinese group buying website for local services
-	'www.toutiao.com',          // Toutiao - A news and information content platform
-	'www.ifeng.com',            // iFeng - A popular news website in China
-	'www.autohome.com.cn',      // Autohome - A leading Chinese automobile online platform
-	'www.360.cn',               // 360 - A Chinese internet security company
-	'www.douyin.com',           // Douyin - A Chinese short video platform
-	'www.kuaidi100.com',        // Kuaidi100 - A Chinese express delivery tracking service
-	'www.wechat.com',           // WeChat - A popular messaging and social media app
-	'www.csdn.net',             // CSDN - A Chinese technology community website
-	'www.imgo.tv',              // ImgoTV - A Chinese live streaming platform
-	'www.aliyun.com',           // Alibaba Cloud - A Chinese cloud computing company
-	'www.eyny.com',             // Eyny - A Chinese multimedia resource-sharing website
-	'www.mgtv.com',             // MGTV - A Chinese online video platform
-	'www.xunlei.com',           // Xunlei - A Chinese download manager and torrent client
-	'www.hao123.com',           // Hao123 - A Chinese web directory service
-	'www.bilibili.com',         // Bilibili - A Chinese video sharing and streaming platform
-	'www.youth.cn',             // Youth.cn - A China Youth Daily news portal
-	'www.hupu.com',             // Hupu - A Chinese sports community and forum
-	'www.youzu.com',            // Youzu Interactive - A Chinese game developer and publisher
-	'www.panda.tv',             // Panda TV - A Chinese live streaming platform
-	'www.tudou.com',            // Tudou - A Chinese video-sharing website
-	'www.zol.com.cn',           // ZOL - A Chinese electronics and gadgets website
-	'www.toutiao.io',           // Toutiao - A news and information app
-	'www.tiktok.com',           // TikTok - A Chinese short-form video app
-	'www.netease.com',          // NetEase - A Chinese internet technology company
-	'www.cnki.net',             // CNKI - China National Knowledge Infrastructure, an information aggregator
-	'www.zhibo8.cc',            // Zhibo8 - A website providing live sports streams
-	'www.zhangzishi.cc',        // Zhangzishi - Personal website of Zhang Zishi, a public intellectual in China
-	'www.xueqiu.com',           // Xueqiu - A Chinese online social platform for investors and traders
-	'www.qqgongyi.com',         // QQ Gongyi - Tencent's charitable foundation platform
-	'www.ximalaya.com',         // Ximalaya - A Chinese online audio platform
-	'www.dianping.com',         // Dianping - A Chinese online platform for finding and reviewing local businesses
-	'www.suning.com',           // Suning - A leading Chinese online retailer
-	'www.zhaopin.com',          // Zhaopin - A Chinese job recruitment platform
-	'www.jianshu.com',          // Jianshu - A Chinese online writing platform
-	'www.mafengwo.cn',          // Mafengwo - A Chinese travel information sharing platform
-	'www.51cto.com',            // 51CTO - A Chinese IT technical community website
-	'www.qidian.com',           // Qidian - A Chinese web novel platform
-	'www.ctrip.com',            // Ctrip - A Chinese travel services provider
-	'www.pconline.com.cn',      // PConline - A Chinese technology news and review website
-	'www.cnzz.com',             // CNZZ - A Chinese web analytics service provider
-	'www.telegraph.co.uk',      // The Telegraph - A British newspaper website	
-	'www.ynet.com',             // Ynet - A Chinese news portal
-	'www.ted.com',              // TED - A platform for ideas worth spreading
-	'www.renren.com',           // Renren - A Chinese social networking service
-	'www.pptv.com',             // PPTV - A Chinese online video streaming platform
-	'www.liepin.com',           // Liepin - A Chinese online recruitment website
-	'www.881903.com',           // 881903 - A Hong Kong radio station website
-	'www.aipai.com',            // Aipai - A Chinese online video sharing platform
-	'www.ttpaihang.com',        // Ttpaihang - A Chinese celebrity popularity ranking website
-	'www.quyaoya.com',          // Quyaoya - A Chinese online ticketing platform
-	'www.91.com',               // 91.com - A Chinese software download website
-	'www.dianyou.cn',           // Dianyou - A Chinese game information website
-	'www.tmtpost.com',          // TMTPost - A Chinese technology media platform
-	'www.douban.com',           // Douban - A Chinese social networking service
-	'www.guancha.cn',           // Guancha - A Chinese news and commentary website
-	'www.so.com',               // So.com - A Chinese search engine
-	'www.58.com',               // 58.com - A Chinese classified advertising website
-	'www.cnblogs.com',          // Cnblogs - A Chinese technology blog community
-	'www.cntv.cn',              // CCTV - China Central Television official website
-	'www.secoo.com',            // Secoo - A Chinese luxury e-commerce platform
-];
+	'cf-prem.bmkg.xyz',               
