@@ -285,8 +285,7 @@ function homePageHTML() {
     <!-- Sidebar -->
     <div class="sidebar">
         <div>
-            <h2>Navigation</h2>
-            <a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02''><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
+            <h2>Navigation</h2><a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02" target="_blank"> CF-PREM</a>
             <a href="https://t.me/edtunrev" target="_blank"><i class="fab fa-telegram"></i> Telegram Group</a>
         </div>
     </div>
