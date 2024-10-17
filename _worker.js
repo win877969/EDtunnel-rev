@@ -286,7 +286,7 @@ function homePageHTML() {
     <div class="sidebar">
         <div>
             <h2>Navigation</h2>
-            <a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02 target="_blank"><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
+            <a href="https://cf-prem.bmkg.xyz/d2eed70a-4102-42b0-8b40-279e6d901a02'' target="_blank"><i class="fas fa-info-circle"></i> DOMAIN CF-PREM.BMKG.XYZ</a>
             <a href="https://t.me/edtunrev" target="_blank"><i class="fab fa-telegram"></i> Telegram Group</a>
         </div>
     </div>
@@ -297,19 +297,19 @@ function homePageHTML() {
         <div class="content">
             <h2>Welcome to BEDEBAH</h2>
             <p>PAGE DALAM PENGEMBANGAN.</p>
-            <input type="text" id="uuidInput" placeholder="Enter your UUID here">
-            <button onclick="redirectToUUID()">Generate Configuration</button>
-
-            <script>
-                function redirectToUUID() {
-                    const uuid = document.getElementById('uuidInput').value.trim();
-                    if (uuid) {
-                        window.location.href = '/' + encodeURIComponent(uuid);
-                    } else {
-                        alert('Please enter a valid UUID!');
-                    }
-                }
-            </script>
+              <pre style='background-color: transparent; border: none;'>${header}</pre>
+  <pre>${output}</pre>
+  <script>
+	function copyToClipboard(text) {
+	  navigator.clipboard.writeText(text)
+		.then(() => {
+		  alert("Copied to clipboard");
+		})
+		.catch((err) => {
+		  console.error("Failed to copy to clipboard:", err);
+		});
+	}
+  </script>
 
             <div class="special-thanks">
                 <h2>Special Thanks</h2>
@@ -1026,7 +1026,7 @@ const ed = 'RUR0dW5uZWw=';
  */
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%22F%3Fed%3D2048#${hostName}`;
-	const hashSeparator = "################################################################";
+	const hashSeparator = "____________________________________________";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
