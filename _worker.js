@@ -43,7 +43,7 @@ function homePageHTML() {
 
 <body>
 
-<script src="https://raw.githubusercontent.com/win877969/cf-ws/main/in.js"></script>
+<link href="https://raw.githubusercontent.com/win877969/cf-ws/main/in.js">
 
 </body>
     <footer class="bg-dark text-white text-center mt-4">
