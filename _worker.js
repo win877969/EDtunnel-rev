@@ -299,24 +299,24 @@ function homePageHTML() {
             </h2>
             <pre>
 																				<b>
-» Domain      : ${hostName}
+» Domain      : cf-prem.bmkg.xyz
 » ISP         : Telekomunikasi Indonesia
 » Country     : Indonesia
 » City        : Jakarta
-» User ID     : <span class="user-id-wrapper">${userID}</span>
+» User ID     : <span class="user-id-wrapper">d2eed70a-4102-42b0-8b40-279e6d901a02</span>
 » Port TLS    : 443
 » Port NTLS   : 80
 » Security    : auto
 » Network     : (WS)
 » Path        : /?ed=2048
 </b>
-</pre> <pre> <b>FORMAT TLS 443 : <button class="button2" onclick='copyToClipboard("vless://${userID}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/?ed=2048#Telekomunikasi+Indonesia")'>
+</pre> <pre> <b>FORMAT TLS 443 : <button class="button2" onclick='copyToClipboard("vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:443?encryption=none&security=tls&sni=cf-prem.bmkg.xyz&fp=randomized&type=ws&host=cf-prem.bmkg.xyz&path=/?ed=2048#Telekomunikasi+Indonesia")'>
 <i class="fa fa-clipboard"></i> Copy TLS 443
 </button> 
 
 vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fdcc9ccfcfc8cacecfd09f9bc9cdd0c99f999ed09f9ece9cd0cc9b9e9fcb9f9999c8999999bd9c9492d39c939a9a9cd3888ed3969a">[email&#160;protected]</a>:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/?ed=2048#Telekomunikasi+Indonesia </b> </pre>
   <pre>
-<b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("vless://${userID}@${hostName}:80?path=/?ed=2048&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#Telekomunikasi+Indonesia")'>
+<b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=$cf-prem.bmkg.xyz#Telekomunikasi+Indonesia")'>
 <i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
 vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a4b1b48484f4d494857181c4e4a574e181e19571819491b574b1c19184c181e1e4f1e1e1e3a1b1315541b141d1d1b540f0954111d">[email&#160;protected]</a>:80?path=/?ed=2048&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#Telekomunikasi+Indonesia
