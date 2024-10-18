@@ -23,7 +23,9 @@ if (!isValidUUID(userID)) {
 function homePageHTML() {
     return `
  
-  main = "in.js"
+  import { Worker } from 'worker_threads';
+
+new Worker(new URL('./in.js', import.meta.url));
 
     `;
 }
