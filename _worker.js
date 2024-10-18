@@ -22,273 +22,373 @@ if (!isValidUUID(userID)) {
 
 function homePageHTML() {
     return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <title>VPN Vless | Embeng 🇮🇩🇵🇸</title>
-  <link rel="icon" href=
-  "https://www.svgrepo.com/download/375724/vpn-alt.svg" type=
-  "image/svg+xml">
-  <link href=
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-  rel="stylesheet">
-  <link rel="stylesheet" href=
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href=
-  "https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
-  <script src=
-  "https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-            .form-control::placeholder {
-                color: #999;
+            <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akun Vless Gratis - Vanitas</title>
+        <meta name="description" content="Akun Vless Gratis.">
+        <meta name="keywords" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare">
+        <meta name="author" content="Angga Alfarizi">
+        <meta name="robots" content="index, follow">
+        <!-- Open Graph Meta Tags untuk SEO Media Sosial -->
+        <meta property="og:title" content="Akun Vless Gratis - Akun Vless Cloudflare">
+        <meta property="og:description" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/img-2.png">
+        <!-- Ganti dengan URL gambar yang sesuai -->
+        <meta property="og:url" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/gsmbar.img.jpg">
+        <meta property="og:type" content="website">
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Akun Vless Gratis - Akun Vless Cloudflare">
+        <meta name="twitter:description" content="Anggavless, Vless Gratis, Free Vless, Vless CF, Trojan CF, Cloudflare.">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/angga03k/papipu/main/img/gsmbar.img.jpg">
+        <!-- Ganti dengan URL gambar yang sesuai -->
+        <link href="https://raw.githubusercontent.com/angga03k/papipu/main/img/img-2.png" rel="icon" type="image/png">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                position: relative;
+                /* Untuk positioning watermark */
+            }
+
+            .container {
+                background-color: #1d1d1d;
+                /* Warna gelap dengan nuansa lebih dalam */
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+                padding: 30px;
+                width: 100%;
+                max-width: 600px;
+                border: 1px solid #121212;
+                position: relative;
+                /* Untuk positioning watermark */
+            }
+
+            h2 {
+                text-align: center;
+                margin: 0;
+                color: #ffa500;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Animasi berubah warna untuk setiap huruf */
+            .animated-text span {
+                display: inline-block;
+                font-size: 24px;
+                animation: color-change 3s infinite;
+                font-weight: bold;
+            }
+
+            .animated-text span:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            .animated-text span:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+
+            .animated-text span:nth-child(3) {
+                animation-delay: 0.2s;
+            }
+
+            .animated-text span:nth-child(4) {
+                animation-delay: 0.3s;
+            }
+
+            .animated-text span:nth-child(5) {
+                animation-delay: 0.4s;
+            }
+
+            .animated-text span:nth-child(6) {
+                animation-delay: 0.5s;
+            }
+
+            .animated-text span:nth-child(7) {
+                animation-delay: 0.6s;
+            }
+
+            .animated-text span:nth-child(8) {
+                animation-delay: 0.7s;
+            }
+
+            .animated-text span:nth-child(9) {
+                animation-delay: 0.8s;
+            }
+
+            .animated-text span:nth-child(10) {
+                animation-delay: 0.9s;
+            }
+
+            .animated-text span:nth-child(11) {
+                animation-delay: 1s;
+            }
+
+            .animated-text span:nth-child(12) {
+                animation-delay: 1.1s;
+            }
+
+            @keyframes color-change {
+                0% {
+                    color: #ffa500;
+                }
+
+                20% {
+                    color: #ff4500;
+                }
+
+                40% {
+                    color: #ff6347;
+                }
+
+                60% {
+                    color: #ffd700;
+                }
+
+                80% {
+                    color: #32cd32;
+                }
+
+                100% {
+                    color: #ffa500;
+                }
+            }
+
+            pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                background-color: #2b2b2b;
+                border-radius: 8px;
+                padding: 15px;
+                color: #ffffff;
+                margin-bottom: 20px;
+                border: 1px solid #3c3c3c;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .button2 {
+                background-color: #ffa500;
+                border: none;
+                color: #1e1e1e;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+                transition: background-color 0.3s ease, transform 0.2s ease;
+            }
+
+            .button2:hover {
+                background-color: #ff8c00;
+                transform: scale(1.05);
+            }
+
+            .watermark {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 0.8rem;
+                color: rgba(255, 255, 255, 0.5);
+                /* Warna watermark dengan transparansi */
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                /* Bayangan teks untuk keterbacaan */
+                font-weight: bold;
+                text-align: center;
+                /* Pusatkan teks watermark */
+            }
+
+            .watermark a {
+                color: #ffa500;
+                /* Warna teks link */
+                text-decoration: none;
+                /* Menghapus garis bawah link */
+                font-weight: bold;
+                /* Menambahkan ketebalan pada teks */
+            }
+
+            .watermark a:hover {
+                color: #ffa500;
+                /* Warna link saat hover */
+            }
+
+            .user-id-wrapper {
+                display: inline-block;
+                max-width: 14ch;
+                /* Menampilkan 15 karakter pada tampilan awal */
+                overflow-x: auto;
+                /* Mengaktifkan scrollbar horizontal jika diperlukan */
+                white-space: nowrap;
+                /* Mencegah teks membungkus ke baris berikutnya */
+                background-color: transparent;
+                /* Latar belakang transparan */
+                border: none;
+                /* Menghapus border */
+                padding: 0;
+                /* Menghapus padding */
+                font-weight: bold;
+                /* Menambahkan ketebalan pada teks */
+            }
+
+            .ordered-list {
+                margin: 20px 0;
+                padding-left: 20px;
+                color: #ffa500;
+            }
+
+            .ordered-list li {
+                margin-bottom: 10px;
+                padding-left: 10px;
+                list-style-position: inside;
+                font-weight: bold;
+            }
+
+            .noted {
+                margin-top: 20px;
+                color: #ff4500;
+                font-weight: bold;
                 font-style: italic;
             }
-            table.dataTable {
-                background-color: #343a40;
-                border: 1px solid #6c757d;
-                color: white;
-                border-collapse: collapse;
+
+            .noted1 {
+                margin-top: 20px;
+                color: #ffa500;
+                font-weight: bold;
+                font-style: italic;
+                line-height: 1.5;
             }
-            .table-dark tr,
-            .table-dark td {
-                color: white;
-                vertical-align: middle;
-            }
-            table.dataTable thead {
-                background-color: #495057;
-                color: white;
-            }
-            table.dataTable thead th {
-                text-align: center;
-                border: 1px solid #6c757d;
-            }
-            table.dataTable tbody td {
-                text-align: center;
-                border: 1px solid #50575e;
-            }
-            table.dataTable tbody tr {
-                border: 1px solid #50575e;
-            }
-            table.dataTable tbody tr:hover {
-                background-color: #50575e;
-            }
-            .dataTables_wrapper .dataTables_filter label,
-            .dataTables_wrapper .dataTables_length label,
-            .dataTables_wrapper .dataTables_info,
-            .dataTables_wrapper .dataTables_paginate {
-                color: white;
-            }
-            .dataTables_wrapper .dataTables_filter input,
-            .dataTables_wrapper .dataTables_length select {
-                color: white;
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button {
-                color: white;
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-                background-color: #50575e;
-                color: white;
-            }
-            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-                background-color: #50575e;
-                color: white;
-                border: 1px solid #6c757d;
-            }
-            .dataTables_wrapper .dataTables_info,
-            .dataTables_wrapper .dataTables_paginate {
-                color: white;
-                text-align: center;
-            }
-  </style>
-</head>
-<body class="bg-dark text-white">
-  <div class="container mt-4">
-    <div class="text-center mt-4">
-      <h1 class="text-center">Free VPN Vless</h1>
-    </div>
-    <div class="card bg-secondary text-white">
-      <div class="card-body">
-        <h3 class="text-center">Add Proxy</h3>
-        <form method="post" action="#">
-          <div class="mb-3">
-            <label for="proxy" class="form-label">Proxy
-            <small class="text-warning" style=
-            "font-style: italic;">(Max 10 lines)</small></label> 
-            <textarea rows="5" cols="10" class="form-control" id=
-            "proxy" name="proxy" placeholder=
-            "wildcard : ava.game.naver.com, quiz.vidio.com, graph.instagram.com, investors.spotify.com, io.ruangguru.com, zaintest.vuclip.com, support.zoom.us, cache.netflix.com dll..">
-            </textarea>
-            <div class=
-            "alert alert-danger alert-dismissible fade show mt-2"
-            id="lineWarning" style="display: none;">
-              You can only enter a maximum of 10 lines.
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="animated-text">
+                <span>V</span>
+                <span>L</span>
+                <span>E</span>
+                <span>S</span>
+                <span>S</span>&nbsp; <span>A</span>
+                <span>C</span>
+                <span>C</span>
+                <span>O</span>
+                <span>U</span>
+                <span>N</span>
+                <span>T</span>
+            </h2>
+            <pre>
+																				<b>
+» Domain      : aio.angga.us.kg
+» ISP         : Telekomunikasi Indonesia
+» Country     : Indonesia
+» City        : Jakarta
+» User ID     : 
+																					<span class="user-id-wrapper">1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd</span>
+» Port TLS    : 443
+» Port NTLS   : 80
+» Security    : auto
+» Network     : (WS)
+» Path        : /        
+																				</b>
+																			</pre>
+            <pre>
+																				<b>FORMAT TLS 443 : 
+																					<button class="button2" onclick='copyToClipboard("vless://1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd@aio.angga.us.kg:443?encryption=none&security=tls&sni=aio.angga.us.kg&fp=randomized&type=ws&host=aio.angga.us.kg&path=%2F#Telekomunikasi+Indonesia")'>
+																						<i class="fa fa-clipboard"></i> Copy TLS 443
+																					</button> 
+
+vless://
+																					<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fdcc9ccfcfc8cacecfd09f9bc9cdd0c99f999ed09f9ece9cd0cc9b9e9fcb9f9999c8999999bd9c9492d39c939a9a9cd3888ed3969a">[email&#160;protected]</a>:443?encryption=none&security=tls&sni=aio.angga.us.kg&fp=randomized&type=ws&host=aio.angga.us.kg&path=%2F#Telekomunikasi+Indonesia
+																				</b>
+																			</pre>
+            <pre>
+																				<b>FORMAT NTLS 80  : 
+																					<button class="button2" onclick='copyToClipboard("vless://1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd@aio.angga.us.kg:80?path=%2F&security=none&encryption=none&host=aio.angga.us.kg&fp=randomized&type=ws&sni=aio.angga.us.kg#Telekomunikasi+Indonesia")'>
+																						<i class="fa fa-clipboard"></i> Copy NTLS 80 
+																					</button>
+
+vless://
+																					<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a4b1b48484f4d494857181c4e4a574e181e19571819491b574b1c19184c181e1e4f1e1e1e3a1b1315541b141d1d1b540f0954111d">[email&#160;protected]</a>:80?path=%2F&security=none&encryption=none&host=aio.angga.us.kg&fp=randomized&type=ws&sni=aio.angga.us.kg#Telekomunikasi+Indonesia
+																				</b>
+																			</pre>
+            <h3>DAFTAR BUG WILCARD</h3>
+            <ul class="ordered-list">
+                <li>graph.instagram.com</li>
+                <li>investors.spotify.com</li>
+                <li>cache.netflix.com</li>
+                <li>www.pubgmobile.com</li>
+                <li>dl.cvs.freefiremobile.com</li>
+                <li>ava.game.naver.com</li>
+                <li>support.zoom.us</li>
+                <li>quiz.int.vidio.com</li>
+                <li>blog.webex.com</li>
+                <li>live.iflix.com</li>
+                <li>zaintest.vuclip.com</li>
+                <li>sb.scorecardresearch.com</li>
+            </ul>
+            <h3>Cara Penggunaan Wilcard</h3>
+            <p class="noted1">Ganti domain pada akun VLESS dengan salah satu domain Bug Wilcard di atas, misalnya: graph.instagram.com.aio.angga.us.kg</p>
+            <h3>Cara Ganti Server atau ISP</h3>
+            <p class="noted1">Ganti Path Contoh /id1 jika ingin ganti server maka ganti path jadi /id2. List Path ada di bawah.</p>
+            <ul class="ordered-list">
+                <li>id1</li>
+                <li>id2</li>
+                <li>id3</li>
+                <li>id4</li>
+                <li>id5</li>
+                <li>sg1</li>
+                <li>sg2</li>
+                <li>sg3</li>
+                <li>sg4</li>
+                <li>sg5</li>
+                <li>us1</li>
+                <li>us2</li>
+                <li>us3</li>
+                <li>jp1</li>
+                <li>jp2</li>
+                <li>jp3</li>
+                <li>kr1</li>
+                <li>kr2</li>
+                <li>uk1</li>
+                <li>aus1</li>
+                <li>ger1</li>
+                <li>kr1</li>
+            </ul>
+            <p class="noted">Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
+            <div class="watermark"> Develoved by <a href="https://t.me/anggaalfarizi" target="_blank">angga03k</a>
             </div>
-          </div><button type="submit" class=
-          "btn btn-primary w-100"> Submit</button>
-        </form>
-      </div>
-    </div>
-    <div class="card bg-secondary text-white mt-4">
-      <div class="card-body">
-        <h3 class="text-center">Proxy Database</h3>
-        <div class="table-responsive">
-          <table id="proxyTable" class=
-          "table table-bordered table-striped text-white bg-dark table-dark mt-3">
-            <thead>
-              <tr>
-                <th>Proxy</th>
-                <th>Country</th>
-                <th>ISP</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>101.50.0.114:8443</td>
-                <td>Indonesia</td>
-                <td>Pt. Beon Intermedia</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D101.50.0.114%3A8443#Pt.+Beon+Intermedia")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D101.50.0.114%3A8443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Pt.+Beon+Intermedia")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>172.232.252.101:587</td>
-                <td>Indonesia</td>
-                <td>Akamai Technologies, Inc.</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D172.232.252.101%3A587#Akamai+Technologies,+Inc.")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D172.232.252.101%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Akamai+Technologies,+Inc.")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>35.219.50.99:587</td>
-                <td>Indonesia</td>
-                <td>Google LLC</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D8.215.23.33%3A587#Google+LLC")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D8.215.23.33%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Google+LLC")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>129.150.50.63:443</td>
-                <td>Singapore</td>
-                <td>Oracle Corporation</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D129.150.50.63%3A443#Oracle+Corporation")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D129.150.50.63%3A443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Oracle+Corporation")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>103.133.223.52:2096</td>
-                <td>Indonesia</td>
-                <td>Pt Cloud Teknologi Nusantara</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D103.133.223.52%3A2096#Pt+Cloud+Teknologi+Nusantara")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D103.133.223.52%3A2096&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Pt+Cloud+Teknologi+Nusantara")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>165.154.48.233:587</td>
-                <td>Indonesia</td>
-                <td>UCLOUD INFORMATION TECHNOLOGY HK LIMITED</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D165.154.48.233%3A587#UCLOUD+INFORMATION+TECHNOLOGY+HK+LIMITED")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D165.154.48.233%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#UCLOUD+INFORMATION+TECHNOLOGY+HK+LIMITED")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>35.219.15.90:443</td>
-                <td>Indonesia</td>
-                <td>Google LLC</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D35.219.15.90%3A443#Google+LLC")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D35.219.15.90%3A443&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Google+LLC")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>43.218.79.114:2053</td>
-                <td>Indonesia</td>
-                <td>Amazon.com, Inc.</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D43.218.79.114%3A2053#Amazon.com,+Inc.")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D43.218.79.114%3A2053&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Amazon.com,+Inc.")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>203.194.112.119:2053</td>
-                <td>Indonesia</td>
-                <td>Rumahweb</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D203.194.112.119%3A2053#Rumahweb")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D203.194.112.119%3A2053&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Rumahweb")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>47.236.7.98:587</td>
-                <td>Singapore</td>
-                <td>Alibaba us Technology Co., Ltd.</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D47.236.7.98%3A587#Alibaba+us+Technology+Co.,+Ltd.")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D47.236.7.98%3A587&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Alibaba+us+Technology+Co.,+Ltd.")'>
-                Copy NTLS</button></td>
-              </tr>
-              <tr>
-                <td>157.230.33.184:80</td>
-                <td>Singapore</td>
-                <td>Digitalocean, LLC</td>
-                <td><button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:443?encryption=none&amp;security=tls&amp;sni=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;host=vless.recycle.web.id&amp;path=%2Fvless%3D157.230.33.184%3A80#Digitalocean,+LLC")'>
-                Copy TLS</button> <button class="button2" onclick=
-                'copyToClipboard("vless://Palestine@vless.recycle.web.id:80?path=%2Fvless%3D157.230.33.184%3A80&amp;security=none&amp;encryption=none&amp;host=vless.recycle.web.id&amp;fp=randomized&amp;type=ws&amp;sni=vless.recycle.web.id#Digitalocean,+LLC")'>
-                Copy NTLS</button></td>
-              </tr>
-            </tbody>
-          </table>
         </div>
-      </div>
-    </div>
-    <footer class="bg-dark text-white text-center mt-4">
-      <p>© 2024 Free Vless | by~ Embeng.</p>
-    </footer>
-  </div>
-  <script src=
-  "https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-  <script src=
-  "https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-  
-  <script>
-
-            $(document).ready(function() {
-                $('#proxyTable').DataTable();
-            });
-
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script>
             function copyToClipboard(text) {
-                navigator.clipboard.writeText(text)
-                    .then(() => {
-                        alert("Copied to clipboard");
-                    })
-                    .catch((err) => {
-                        console.error("Failed to copy to clipboard:", err);
-                    });
+                navigator.clipboard.writeText(text).then(() => {
+                    alert("Copied to clipboard");
+                }).catch((err) => {
+                    console.error("Failed to copy to clipboard:", err);
+                });
             }
-  </script>
-</body>
+        </script>
+    </body>
 </html>
+
 
 
     `;
