@@ -282,54 +282,46 @@ function homePageHTML() {
     <body>
         <div class="container">
             <h2 class="animated-text">
-                <span>V</span>
-                <span>L</span>
-                <span>E</span>
+                <span>C</span>
+                <span>F</span>
+                <span>-</span>
+                <span>W</span>
                 <span>S</span>
-                <span>S</span>&nbsp; <span>A</span>
-                <span>C</span>
-                <span>C</span>
-                <span>O</span>
-                <span>U</span>
-                <span>N</span>
-                <span>T</span>
+                <span>.</span>
+                <span>B</span>
+                <span>M</span>
+                <span>K</span>
+                <span>G</span>
+                <span>.</span>
+                <span>X</span>
+                <span>Y</span>
+                <span>Z</span>
             </h2>
             <pre>
 																				<b>
-» Domain      : aio.angga.us.kg
+» Domain      : ${hostName}
 » ISP         : Telekomunikasi Indonesia
 » Country     : Indonesia
 » City        : Jakarta
-» User ID     : 
-																					<span class="user-id-wrapper">1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd</span>
+» User ID     : <span class="user-id-wrapper">${userID}</span>
 » Port TLS    : 443
 » Port NTLS   : 80
 » Security    : auto
 » Network     : (WS)
-» Path        : /        
-																				</b>
-																			</pre>
-            <pre>
-																				<b>FORMAT TLS 443 : 
-																					<button class="button2" onclick='copyToClipboard("vless://1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd@aio.angga.us.kg:443?encryption=none&security=tls&sni=aio.angga.us.kg&fp=randomized&type=ws&host=aio.angga.us.kg&path=%2F#Telekomunikasi+Indonesia")'>
-																						<i class="fa fa-clipboard"></i> Copy TLS 443
-																					</button> 
+» Path        : /?ed=2048
+</b>
+</pre> <pre> <b>FORMAT TLS 443 : <button class="button2" onclick='copyToClipboard("vless://${userID}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/?ed=2048#Telekomunikasi+Indonesia")'>
+<i class="fa fa-clipboard"></i> Copy TLS 443
+</button> 
 
-vless://
-																					<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fdcc9ccfcfc8cacecfd09f9bc9cdd0c99f999ed09f9ece9cd0cc9b9e9fcb9f9999c8999999bd9c9492d39c939a9a9cd3888ed3969a">[email&#160;protected]</a>:443?encryption=none&security=tls&sni=aio.angga.us.kg&fp=randomized&type=ws&host=aio.angga.us.kg&path=%2F#Telekomunikasi+Indonesia
-																				</b>
-																			</pre>
-            <pre>
-																				<b>FORMAT NTLS 80  : 
-																					<button class="button2" onclick='copyToClipboard("vless://1a225732-bf40-4bdc-bc3a-1fcb6bdd5ddd@aio.angga.us.kg:80?path=%2F&security=none&encryption=none&host=aio.angga.us.kg&fp=randomized&type=ws&sni=aio.angga.us.kg#Telekomunikasi+Indonesia")'>
-																						<i class="fa fa-clipboard"></i> Copy NTLS 80 
-																					</button>
+vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fdcc9ccfcfc8cacecfd09f9bc9cdd0c99f999ed09f9ece9cd0cc9b9e9fcb9f9999c8999999bd9c9492d39c939a9a9cd3888ed3969a">[email&#160;protected]</a>:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/?ed=2048#Telekomunikasi+Indonesia </b> </pre>
+  <pre>
+<b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("vless://${userID}@${hostName}:80?path=/?ed=2048&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#Telekomunikasi+Indonesia")'>
+<i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
-vless://
-																					<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a4b1b48484f4d494857181c4e4a574e181e19571819491b574b1c19184c181e1e4f1e1e1e3a1b1315541b141d1d1b540f0954111d">[email&#160;protected]</a>:80?path=%2F&security=none&encryption=none&host=aio.angga.us.kg&fp=randomized&type=ws&sni=aio.angga.us.kg#Telekomunikasi+Indonesia
-																				</b>
-																			</pre>
-            <h3>DAFTAR BUG WILCARD</h3>
+vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a4b1b48484f4d494857181c4e4a574e181e19571819491b574b1c19184c181e1e4f1e1e1e3a1b1315541b141d1d1b540f0954111d">[email&#160;protected]</a>:80?path=/?ed=2048&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#Telekomunikasi+Indonesia
+</b> </pre>
+            <h3>DAFTAR BUG</h3>
             <ul class="ordered-list">
                 <li>graph.instagram.com</li>
                 <li>investors.spotify.com</li>
@@ -344,36 +336,15 @@ vless://
                 <li>zaintest.vuclip.com</li>
                 <li>sb.scorecardresearch.com</li>
             </ul>
-            <h3>Cara Penggunaan Wilcard</h3>
-            <p class="noted1">Ganti domain pada akun VLESS dengan salah satu domain Bug Wilcard di atas, misalnya: graph.instagram.com.aio.angga.us.kg</p>
-            <h3>Cara Ganti Server atau ISP</h3>
-            <p class="noted1">Ganti Path Contoh /id1 jika ingin ganti server maka ganti path jadi /id2. List Path ada di bawah.</p>
+            <h3>Cara Penggunaan Bug</h3>
+            <p class="noted1">Ganti BUG pada akun VLESS dengan salah satu domain Bug di atas,</p>
+            <h3>DAFTAR INJECT SIAP PAKAI</h3>
+            <p class="noted1">KLICK LIMK AND COPY</p>
             <ul class="ordered-list">
-                <li>id1</li>
-                <li>id2</li>
-                <li>id3</li>
-                <li>id4</li>
-                <li>id5</li>
-                <li>sg1</li>
-                <li>sg2</li>
-                <li>sg3</li>
-                <li>sg4</li>
-                <li>sg5</li>
-                <li>us1</li>
-                <li>us2</li>
-                <li>us3</li>
-                <li>jp1</li>
-                <li>jp2</li>
-                <li>jp3</li>
-                <li>kr1</li>
-                <li>kr2</li>
-                <li>uk1</li>
-                <li>aus1</li>
-                <li>ger1</li>
-                <li>kr1</li>
+                <li>cf-prem.bmkg.xyz</li>
             </ul>
             <p class="noted">Noted: Pastikan untuk memeriksa konfigurasi dengan teliti sebelum digunakan.</p>
-            <div class="watermark"> Develoved by <a href="https://t.me/anggaalfarizi" target="_blank">angga03k</a>
+            <div class="watermark"> Develoved by <a href="https://t.me/seaker877" target="_blank">X-VPN</a>
             </div>
         </div>
         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -1482,8 +1453,8 @@ const เซ็ตพอร์ตHttps = new Set([443, 8443, 2053, 2096, 2087, 2
 
 function สร้างวเลสSub(ไอดีผู้ใช้_เส้นทาง, ชื่อโฮสต์) {
 	const อาร์เรย์ไอดีผู้ใช้ = ไอดีผู้ใช้_เส้นทาง.includes(',') ? ไอดีผู้ใช้_เส้นทาง.split(',') : [ไอดีผู้ใช้_เส้นทาง];
-	const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
-	const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${ชื่อโฮสต์}&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
+	const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${ชื่อโฮสต์}&path=/?ed=2048#`;
+	const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${ชื่อโฮสต์}&fp=random&type=ws&host=${ชื่อโฮสต์}&path=/?ed=2048#`;
 
 	const ผลลัพธ์ = อาร์เรย์ไอดีผู้ใช้.flatMap((ไอดีผู้ใช้) => {
 		const การกำหนดค่าHttp = Array.from(เซ็ตพอร์ตHttp).flatMap((พอร์ต) => {
