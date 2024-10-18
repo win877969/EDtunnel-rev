@@ -285,8 +285,10 @@ function homePageHTML() {
                 <span>C</span>
                 <span>F</span>
                 <span>-</span>
-                <span>W</span>
-                <span>S</span>
+                <span>P</span>
+                <span>R</span>
+                <span>E</span>
+                <span>M</span>
                 <span>.</span>
                 <span>B</span>
                 <span>M</span>
@@ -314,12 +316,12 @@ function homePageHTML() {
 <i class="fa fa-clipboard"></i> Copy TLS 443
 </button> 
 
-vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fdcc9ccfcfc8cacecfd09f9bc9cdd0c99f999ed09f9ece9cd0cc9b9e9fcb9f9999c8999999bd9c9492d39c939a9a9cd3888ed3969a">[email&#160;protected]</a>:443?encryption=none&security=tls&sni=cf-prem.bmkg.xyz&fp=randomized&type=ws&host=cf-prem.bmkg.xyz&path=/?ed=2048#Telekomunikasi+Indonesia </b> </pre>
+vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:443?encryption=none&security=tls&sni=cf-prem.bmkg.xyz&fp=randomized&type=ws&host=cf-prem.bmkg.xyz&path=/?ed=2048#Telekomunikasi+Indonesia</b> </pre>
   <pre>
 <b>FORMAT NTLS 80  : <button class="button2" onclick='copyToClipboard("vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=cf-prem.bmkg.xyz#Telekomunikasi+Indonesia")'>
 <i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
-vless:// <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a4b1b48484f4d494857181c4e4a574e181e19571819491b574b1c19184c181e1e4f1e1e1e3a1b1315541b141d1d1b540f0954111d">[email&#160;protected]</a>:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=cf-prem.bmkg.xyz#Telekomunikasi+Indonesia
+vless://d2eed70a-4102-42b0-8b40-279e6d901a02@cf-prem.bmkg.xyz:80?path=/?ed=2048&security=none&encryption=none&host=cf-prem.bmkg.xyz&fp=randomized&type=ws&sni=cf-prem.bmkg.xyz#Telekomunikasi+Indonesia
 </b> </pre>
             <h3>DAFTAR BUG</h3>
             <ul class="ordered-list">
