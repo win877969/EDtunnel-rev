@@ -22,9 +22,8 @@ if (!isValidUUID(userID)) {
 
 function homePageHTML() {
     return `
-  <script src=
-  "https://raw.githubusercontent.com/win877969/cf-ws/refs/heads/main/in.js"></script>
-
+ 
+  main = "in.js"
 
     `;
 }
