@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <title>VPN Vless | Embeng 🇮🇩🇵🇸</title>
-  <link rel="icon" href=
-  "https://www.svgrepo.com/download/375724/vpn-alt.svg" type=
-  "image/svg+xml">
-  <link href=
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-  rel="stylesheet">
-  <link rel="stylesheet" href=
-  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href=
-  "https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-
   <script src=
   "https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
@@ -238,30 +220,3 @@
         </div>
       </div>
     </div>
-    <footer class="bg-dark text-white text-center mt-4">
-      <p>© 2024 Free Vless | by~ Embeng.</p>
-    </footer>
-  </div>
-  <script src=
-  "https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-  <script src=
-  "https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-  
-  <script>
-
-            $(document).ready(function() {
-                $('#proxyTable').DataTable();
-            });
-
-            function copyToClipboard(text) {
-                navigator.clipboard.writeText(text)
-                    .then(() => {
-                        alert("Copied to clipboard");
-                    })
-                    .catch((err) => {
-                        console.error("Failed to copy to clipboard:", err);
-                    });
-            }
-  </script>
-</body>
-</html>
